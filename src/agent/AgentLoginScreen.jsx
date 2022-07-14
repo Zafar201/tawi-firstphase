@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
+import AgentNavbar from '../components/AgentNavbar'
 
 function AgentLoginScreen() {
     const navigate = useNavigate()
@@ -11,25 +12,7 @@ function AgentLoginScreen() {
     }
   return (
     <div>
-          <div className='admin-nav'>
-       <Container>
-           <Row>
-               <Col className='admin-logo'>
-               <Link to="/">    
-                <img src="../assets/image/log3.png" alt="" />
-               </Link>
-               </Col>
-          
-               {/* <Col md={2} className='lang d-flex'>
-                 <img src="../assets/image/lang.png" alt="" />
-                 <p>  English</p>
-                 
-                 <img style={{height:"10px",marginTop:"18px"}} src="../assets/image/down-2.png" alt="" />
-
-               </Col> */}
-           </Row>
-       </Container>
-       </div>
+        <AgentNavbar/>
 
        <form className='login' onSubmit={submitHandler}>
           <Container>
